@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - ArthuvDev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conteiner_principal">
+        <div class="tela_div">
+            <input class="tela_input" type="text" placeholder="">
+            
+        </div>
+        <div class="abaixodatela">
+            <div class="numeros">
+                <div>
+                    <button onclick="apagar_um()">C</button>
+                    <button onclick="apagar_tudo()">CE</button>
+                    <button class="dividir" onclick="dividir()">/</button>
+                </div>
+                <div>
+                    <button onclick="adicionar7()" id="7">7</button>
+                    <button onclick="adicionar8()" id="8">8</button>
+                    <button onclick="adicionar9()" id="9">9</button>
+                </div>
+                <div>
+                    <button onclick="adicionar4()" id="4">4</button>
+                    <button onclick="adicionar5()" id="5">5</button>
+                    <button onclick="adicionar6()" id="6">6</button>
+                </div>
+                <div>
+                    <button onclick="adicionar1()" id="1">1</button>
+                    <button onclick="adicionar2()" id="2">2</button>
+                    <button onclick="adicionar3()" id="3">3</button>
+                </div>
+                <div>
+                    <button id="0">0</button>
+                </div>
+                
+                
+            </div>
+            <div class="expressoes">
+                <div class="operadores">
+                    <button class="subtrair" onclick="subtrair()">-</button>
+                    <button class="multiplicar" onclick="multiplicar()">*</button>
+                    <button class="somar" onclick="somar()">+</button>
+                </div>
+                <div class="igual">
+                    <button onclick="resultado()">=</button>
+                </div>
+                
+            </div>
+        </div>
+        
+</body>
+<script src="script.js"></script>
+</html>
